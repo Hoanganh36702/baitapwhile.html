@@ -3,22 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>in 20 số Fibonacci trong dẫy</title>
+    <title>Tìm số đầu tiên trong dẫy chia hết cho 5</title>
   </head>
   <body></body>
   <script>
     let a = 1;
     let b = 1;
     let c;
-    count = 3;
+    count = 2;
     let arr = [1, 1];
-    while (count <= 20) {
+    while (c % 5 !== 0) {
       c = a + b;
-      arr.push(c);
       a = b;
       b = c;
       count++;
     }
-    document.write("20 số Fibonacci đầu tiên là:" + " " + arr);
+    document.write("số Fibonacci đầu tiên chia hết cho 5 là:" + " " + c);
   </script>
 </html>

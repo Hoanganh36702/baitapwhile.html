@@ -3,22 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>in 20 số Fibonacci trong dẫy</title>
+    <title>tính 20 số Fibonacci trong dẫy</title>
   </head>
   <body></body>
   <script>
     let a = 1;
     let b = 1;
     let c;
-    count = 3;
-    let arr = [1, 1];
+    let count = 3;
+    let sum = 2;
     while (count <= 20) {
       c = a + b;
-      arr.push(c);
+      sum = sum + c;
       a = b;
       b = c;
       count++;
     }
-    document.write("20 số Fibonacci đầu tiên là:" + " " + arr);
+    document.write("tổng 20 số Fibonacci đầu tiên là:" + " " + sum);
   </script>
 </html>

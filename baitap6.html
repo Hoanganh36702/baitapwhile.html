@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tong 30 so chia het 7</title>
+  </head>
+  <body></body>
+  <script>
+    function tong30sochiahetcho7(n) {
+      let count = 0;
+      let sum = 0;
+      let i = 1;
+
+      while (count < n) {
+        if (i % 7 === 0) {
+          sum += i;
+          count++;
+        }
+        i++;
+      }
+
+      return sum;
+    }
+    baitap6.html;
+    const n = 30; // Số lượng số cần tìm
+    const result = tong30sochiahetcho7(n);
+    console.log(`Tổng của ${n} số chia hết cho 7 đầu tiên là: ${result}`);
+  </script>
+</html>
