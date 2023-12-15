@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>baitap2</title>
+  </head>
+  <body>
+    <!-- Sử dụng hàm prompt() để lấy thông tin nhiệt độ hiện tại được nhập bởi người
+    truy cập. Nếu nhiệt độ nhập vào trên 100, yêu cầu người dùng giảm nhiệt độ.
+    Nếu nhiệt độ dưới 20, yêu cầu người dùng tăng nhiệt độ. -->
+  </body>
+  <script>
+    let a = prompt("Nhập nhiệt độ: ");
+    let check = true;
+    while (a > 100) {
+      a = prompt("Vui lòng giảm nhiệt độ lớn hơn 100: ");
+    }
+    while (a < 20) {
+      a = prompt("Vui lòng tăng nhiệt độ lớn hơn 20:");
+    }
+    console.log("Nhiệt độ là: " + a);
+  </script>
+</html>
