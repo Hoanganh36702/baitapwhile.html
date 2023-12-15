@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="content"></div>
+  </body>
+  <script>
+    let cout = "";
+    var content = document.querySelector(".content");
+    let i = 10;
+    while (i <= 100) {
+      cout += `<hr style="width: ${i}px"/>`;
+      i = i + 5;
+    }
+    console.log(cout);
+    content.innerHTML = cout;
+  </script>
+</html>
